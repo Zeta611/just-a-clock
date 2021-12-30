@@ -26,6 +26,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="lVA-F8-2bx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Em-j9-bW6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lVA-F8-2bx" secondAttribute="bottom" constant="20" id="7Vt-xH-AwT"/>
@@ -34,12 +35,17 @@
                             <constraint firstItem="lVA-F8-2bx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tB7-BJ-f8d"/>
                             <constraint firstItem="lVA-F8-2bx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vO2-wQ-O9F"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="60a-39-5gX" appends="YES" id="d53-MI-tvB"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="tapGestureRecognizer" destination="60a-39-5gX" id="aGs-1Q-bk0"/>
                         <outlet property="timeLabel" destination="lVA-F8-2bx" id="tBc-89-R6s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="60a-39-5gX"/>
             </objects>
             <point key="canvasLocation" x="139" y="119"/>
         </scene>
