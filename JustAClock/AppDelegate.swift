@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         // Override point for customization after application launch.
         application.isIdleTimerDisabled = true
+        application.isStatusBarHidden = true
         return true
     }
 
